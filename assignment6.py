@@ -4,15 +4,15 @@ import os
 import sys
 import time
 
-cwd = os.getcwd()
+#cwd = os.getcwd()
 
 #pulling data from public source
 r = requests.get('https://health.data.ny.gov/resource/d54z-enu8.json')
 r_data = r.json() ## load request as json
 ## load into dataframe
-df = pd.DataFrame(r_data)
+r_data = pd.DataFrame(r_data)
 
-df.to_csv('./blood_lead_testing.csv')
+r_data.to_csv('./blood_lead_testing.csv')
 
 # create a new dictionary with dummy data
 data = r_data
