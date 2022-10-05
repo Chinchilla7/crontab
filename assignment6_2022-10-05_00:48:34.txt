@@ -1,0 +1,14 @@
+     county fips  ... less_than_5_mcg_dl _5_10_mcg_dl
+0    Albany    1  ...                NaN          NaN
+1    Albany    1  ...                NaN          NaN
+2    Albany    1  ...                 10            0
+3    Albany    1  ...                NaN          NaN
+4    Albany    1  ...                NaN          NaN
+..      ...  ...  ...                ...          ...
+995  Otsego   77  ...                  6            0
+996  Putnam   79  ...                NaN          NaN
+997  Putnam   79  ...                205            0
+998  Putnam   79  ...                NaN          NaN
+999  Putnam   79  ...                 42            0
+
+[1000 rows x 15 columns]
