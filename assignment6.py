@@ -4,7 +4,7 @@ import os
 import sys
 import time
 
-#cwd = os.getcwd()
+cwd = os.getcwd()
 
 #pulling data from public source
 r = requests.get('https://health.data.ny.gov/resource/d54z-enu8.json')
@@ -27,3 +27,5 @@ nowStr = time.strftime("%Y-%m-%d_%H:%M:%S", time.localtime(now))
 with open(cwd + '/assignment6_' + nowStr + '.txt', 'w') as f:
     f.write(str(data))
 
+#in Vm instead of cwd, we used direct file path /home/user/crontab/assignment6_ 
+# to make sure cronjobs can find correct path.
